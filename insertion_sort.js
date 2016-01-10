@@ -16,7 +16,9 @@ Array.prototype.generate_numbers = function(amount){
 
 
 //метод срт-вки Кнута для массива
-function sorty(array){
+//алгоритм отличается своей простотой, стабильностью, и очень хорошими показателями в случае если массив частично отсортирован. 
+
+function knut(array){
  var length = array.length;
 for (var i = 0; i < length; i++){
 for (var j = i; j > 0; j--){
@@ -43,7 +45,7 @@ res.generate_numbers(20);
 console.log(res);
 //res.knuth_shuffle();
 
-console.log(sorty(res));
+console.log(knut(res));
 console.log('');
 //res = res.knuth_shuffle();
 //console.log(res);
